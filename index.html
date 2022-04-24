@@ -6,23 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>document</title>
 <style >
+    #tlk-banana{
+        background-color: orange;
+        padding: 1rem;
+        text-align: center;
+    }
     textarea{
         margin: 1%;
         padding: 2rem;
-        height: 10vh;
         width: 90%;
+        height: 10vh;
+        display: block;
+        
+    }
+   #btn-translate{
+       margin-left: 40rem;
+        padding: 1rem 5rem;
+        background-color: orange;
+       font-size: large;
+       border-radius: 0.5rem;
+    }
+    h2 {   
+    text-align: center;
+    }
+    #output {
+        border: 1px solid black;
+        margin: 1%;
+        padding: 2rem;
+        width: 90%;
+        height: 10vh;
         display: block;
     }
+    #foot{
+        text-align: center;
+        font-style: italic;        
+        font-size: x-large;
+        background-color: orange;
+        padding: 3rem;
+    }
+
 </style>
     
 </head>
 <body>
-    <h1>Talk Banana</h1>
+    <h1 id="tlk-banana" > World's Largest Translator</h1>
     <textarea
     id="txt-input"
-     placeholder="wright your own thinking hear and we will convert it"  ></textarea>
+     placeholder="wright your own thinking here and we will convert it"  ></textarea>
+     <button id="btn-translate">Translater</button>
+     <h2>Output  Will Come Hear 👇</h2>
+     <div id="output" >your new thinking will be seen here</div>
+    <footer >
+        <h1 id="foot">About This
+            <p>dasdafdyujadyajdgasudgadgiagduia</p>
+        </h1>
+        
+        
+    </footer>
     
-    <button id="btn-translate">Translater</button>
     <script src="app.js"></script>
 </body>
 </html>
